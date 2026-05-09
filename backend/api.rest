@@ -1,0 +1,29 @@
+### GET semua notes
+GET http://localhost:5000/api/v1/notes
+
+###
+
+### POST tambah note
+POST http://localhost:5000/api/v1/notes
+Content-Type: application/json
+
+{
+  "judul": "Catatan pertama",
+  "isi": "Ini isi catatan"
+}
+
+###
+
+### PATCH edit note (Ganti PUT ke PATCH sesuai kodingan React kamu sebelumnya)
+PATCH http://localhost:5000/api/v1/notes/1
+Content-Type: application/json
+
+{
+  "judul": "Catatan diubah",
+  "isi": "Isi sudah diubah"
+}
+
+###
+
+### DELETE note
+DELETE http://localhost:5000/api/v1/notes/1

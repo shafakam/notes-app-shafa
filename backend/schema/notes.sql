@@ -1,0 +1,9 @@
+CREATE DATABASE notes_app;
+USE notes_app;
+
+CREATE TABLE notes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  judul VARCHAR(255),
+  isi TEXT,
+  tanggal_dibuat TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

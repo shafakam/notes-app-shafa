@@ -1,0 +1,13 @@
+runtime: nodejs20
+service: backend-shafa
+
+env_variables:
+  DB_HOST: "34.172.113.167"
+  DB_USER: "admin"
+  DB_PASSWORD: "mypassword"
+  DB_NAME: "notes_123230130"
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 0
+  max_instances: 1
