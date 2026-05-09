@@ -28,3 +28,6 @@ steps:
       - '--allow-unauthenticated'
 images:
   - 'gcr.io/$PROJECT_ID/frontend-shafa'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
